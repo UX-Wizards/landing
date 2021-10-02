@@ -53,7 +53,7 @@
     </div>
   </body>
   <script>
-    let targetTime = dayjs("2021-10-14T18:30:00-0800")
+    let targetTime = dayjs("2021-10-14T18:15:00-0800")
     let text = "Starting soon"
     function timeFn() {
       let currentTime = dayjs()
@@ -62,7 +62,7 @@
         text = "Starting soon"
       } else {
         diff = dayjs(diff);
-        text = `Event starting in ${diff.format("mm:ss")}`;
+        text = `Talk starting in ${diff.format("mm:ss")}`;
         setTimeout(timeFn, 1000)
       }
       document.getElementById("clock").innerText = text;
